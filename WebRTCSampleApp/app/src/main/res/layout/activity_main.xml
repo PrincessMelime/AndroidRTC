@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.reconinstruments.testappwebrtc.MainActivity"
+    android:background="#ff222222"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/myLabel"
+        android:text="Choose your user account:"
+        android:textColor="#ffffffff"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:id="@+id/buttonUser1"
+            android:text="User 1"
+            android:textSize="20dp"
+            android:textColor="@drawable/font_selector"
+            android:onClick="chooseUser"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_selector"
+            android:layout_marginRight="5dp">
+            <requestFocus/>
+        </Button>
+
+        <Button
+            android:id="@+id/buttonUser2"
+            android:text="User 2"
+            android:textSize="20dp"
+            android:textColor="@drawable/font_selector"
+            android:onClick="chooseUser"
+            android:layout_width="100dp"
+            android:layout_height="60dp"
+            android:background="@drawable/button_selector"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonCall"
+        android:text="CALL"
+        android:textSize="20dp"
+        android:textColor="@drawable/font_selector"
+        android:onClick="attemptCall"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:background="@drawable/button_selector" />
+
+</LinearLayout>
